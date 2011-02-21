@@ -1,0 +1,58 @@
+!!!
+%html
+	%head
+		%title doinnoth.in
+		%link{:href => '/css/main.css', :rel => 'stylesheet', :type => 'text/css'}
+		/[if lte IE 8]
+		:javascript 
+			document.createElement('footer');document.createElement('header');document.createElement('nav');
+	%body
+		#content
+			%header
+				%h1#title 
+					%a{:href => '/'} Priorities
+				%nav
+					%a{:href => '/about', :title => 'About'} About
+				- if authorized?
+					%nav.user.logged-in
+						Hello #{session[:username]}!
+						%a{:href => '/sessions'} Sessions
+						|
+						%a{:href => '/logout'} Logout
+				- else
+					%nav.user.logged-out
+						%a{:href => '/login'} Login
+			%div#view
+				=yield
+			%footer
+				A
+				%a{:href => "http://http://www.sinatrarb.com", :title => "Sinatra"} Sinatra
+				\+
+				%a{:href => "http://haml-lang.com", :title => "Haml"} Haml
+				\+
+				%a{:href => "http://couchdb.apache.org/"} CouchDB
+				\+
+				%a{:href => "https://cloudant.com/"} CloudAnt
+				\+
+				%a{:href => "http://bcrypt-ruby.rubyforge.org/"} bcrypt-ruby
+				\+
+				%a{:href => "http://heroku.com"} Heroku
+				\+
+				%a{:href => "https://github.com/andrewtobin/priorities"} GitHub
+				\ experiment by
+				%a{:href => "http://twitter.com/tobin"} Andrew Tobin
+				\.
+			
+			:javascript
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-20152461-2']);
+				_gaq.push(['_trackPageview']);
+				(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})(); 
+		%script{:src => 'http://ajax.microsoft.com/ajax/jquery/jquery-1.5.min.js'}
+		%script{:src => '/scripts/stopwatch.js'}
+		%script{:src => '/scripts/app.js'}

@@ -1,0 +1,8 @@
+{
+   "_id": "_design/jobs",
+   "views": {
+       "by_user": {
+           "map": "function(doc) { if (doc.type == 'job') emit(doc.user, doc); }"
+       }
+   }
+}

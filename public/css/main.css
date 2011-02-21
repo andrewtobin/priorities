@@ -1,0 +1,202 @@
+/* ------------------------------ *
+ * Reset Reloaded (by Eric Meyer) *
+ * ------------------------------ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}body{line-height:1;color:black;background:white}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:""""}
+
+
+
+html {
+}
+
+body {
+  width: 778px;
+  margin: 0 auto;
+  padding:0px 40px 15px 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  line-height: 1.75;
+  color: #111;
+}
+
+#content {
+	font-size: 1em;
+}
+
+section, header, article, footer {
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, Times, serif;
+}
+
+h2 {
+	font-size: 2.8em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ul li {
+	font-size: 1.2em;
+	list-style: disc inside;
+}
+
+em { 
+	font-style: italic; 
+}
+
+#header {
+  margin-bottom: 3em;
+}
+
+#title {
+  font-size: 3.2em;
+  display:inline-block;
+}
+
+#title a , #title a:hover, #title a:visited{
+  color: #c40;
+  text-decoration:none;
+}
+
+nav {
+	float:right;
+	display:inline-block;
+	padding:10px 25px;
+	border-radius: 0 0 5px 5px;
+	background-color: #114e7a;
+	color: #fff;
+	font-weight:bold;
+	text-align:center;
+	margin-right: 10px;
+}
+
+nav.user {
+	background-color: #113e7a;
+}
+
+nav:last {
+	margin-right:none;
+}
+
+nav a, nav a:hover, nav a:visited {
+	color: #fff;
+}
+
+#view p {
+  margin: 15px 0;
+  font-size:1.5em;
+}
+
+#view a:link,
+#view a:active,
+#view a:visited {
+  color: #c40;
+}
+
+.info { 
+	width: 500px;
+	float:left;
+	min-height: 200px;
+}
+
+.results {
+	width: 278px;
+	float:left;
+	min-height:200px;
+}
+
+.clear {
+	clear:both;
+}
+
+.editable {
+	color: #888;
+	padding:5px 2px;
+}
+
+.editable:focus {
+	border: 1px solid #ccc; 
+}
+
+.editable:hover {
+	border: 1px dashed #ccc;
+}
+
+input.go {
+	font-size:3em;
+	padding:1em;
+	width: 15em;
+}
+
+#time {
+	font-size:3em;
+	text-shadow: #ccc 2px 2px 2px;
+	color: #222;
+}
+
+#total { 
+	display:none;
+}
+.form-body
+{
+	margin-top: 20px;
+	max-width: 700px;
+}
+.form-body .editor-label
+{
+    float: left;
+    font-weight: bold;
+    padding-top: 6px;
+	display: inline-block;
+	width: 120px;
+    margin-bottom: 10px;
+}
+.form-body .editor-field 
+{
+    margin-left: 140px;
+    margin-bottom: 10px;
+    min-height: 30px;
+}
+
+.validation-message {
+	color: #c00;
+	font-size:1.1em;
+	padding-bottom:15px;
+}
+
+.validation-message dt {
+	padding-left:10px;
+}
+
+.validation-message .heading {
+	font-weight: bold;
+	font-size:1.3em;
+	padding-left:0px;
+}
+
+#total, #save {
+	font-size:1.2em;
+}
+
+.saved {
+	background: transparent url(/images/accept.png) no-repeat top right;
+	padding-right:16px;
+}
+
+footer {
+  margin: 50px 0 30px;
+  padding-top: 50px;
+  border-top: 1px solid #CCC;
+  font-size: 11px;
+  color: #777;
+  text-transform: uppercase;
+}
+
+footer a:link,
+footer a:active,
+footer a:visited {
+  color: #777;
+}

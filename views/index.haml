@@ -1,0 +1,20 @@
+.info
+	%p Doin' what?
+	%input{:type => 'button', :value => 'I\'m doin\' nothin\'', :id => 'go', :class => 'go'}
+	#time
+.results
+	%p
+		Here's your current
+		%em Doin' Nothin'
+		stats
+	#stats
+	#total
+		%a{:href => '#'}
+			Caclulate total time
+			%em Doin' Nothin'
+		%br
+		%span
+	- if authorized?
+		#save
+			%a{:href => '#'} Save Session
+.clear &nbsp
